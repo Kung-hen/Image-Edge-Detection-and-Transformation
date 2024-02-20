@@ -1,4 +1,4 @@
-# Computer-Vision Practice two
+# OpenCV-Computer-Vision Practice two
 
 
 
