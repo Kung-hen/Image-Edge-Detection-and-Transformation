@@ -56,16 +56,18 @@
 2.Image Transformation
 
 * 4.1 Resize
+  
    * From (430,430) to (215,215).
 
      ![image](Figures/Microsoft.png)
 
 * 4.2 Translation
+  
    * Xnew = Xold + 215 pixels = 108 + 215 = 323.
    * Ynew = Yold + 215 pixels = 108 + 215 = 323.
    * Point C (108, 108) is center of resized image.
    * Point C’(323, 323) is new center of image. 
-     
+
      ![image](Figures/Translate.png)
 
 * 4.3 Rotation scalling
@@ -74,13 +76,13 @@
    * Scale = 0.5.
    * window size (430,430)
 
-    ![image](Figures/Rotate.png)
+     ![image](Figures/Rotate.png)
   
 * 4.4 Shearing
    * Old location: ([[50,50],[200,50],[50,200]])
    * New location: ([[10,100],[100,50],[100,250]]) 
 
-    ![image](Figures/Sharing.png)
+     ![image](Figures/Sharing.png)
 
 
 
