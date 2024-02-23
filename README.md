@@ -34,55 +34,53 @@
 
 * 3.1 Guassian Blur :
   
-    * Extract 3 channels of the image BGR to 3 separated channels.
+    * Convert the RGB image [Build.jpg](Figures/Building.jpg) into a grayscale image, then smooth it by your own 3x3 Gaussian smoothing filter .
       
-      ![image](Figures/1.1_result.png)
+      ![image](Figures/Gaussian_result.png)
 * 3.2 Sobel X:
   
-    * Transform image into grayscale image
-    * Merge BGR separated channel images from above problem into grayscale image by average weight : (R+G+B)/3.
-
-      ![image](Figures/1.2_result.png)
+    * Use Sobel edge detection to detect vertical edge by your own 3x3 Sobel X operator.
+      
+      ![image](Figures/Sobel_X.png)
 * 3.3 Sobel Y
   
-    * Transform [opencv.png](Figures/opencv.png) from BGR format to HSV format.
-    * Generate mask by calling : cv2.inRange(hsv_img , lower_bound , upper_bound)
-    * Detect Green and White color in the image by calling : cv2.bitwise_and(bgr_img , bgr_img , mask)
+    * Use Sobel edge detection to detect horizontal edge by your own 3x3 Sobel Y operator.
 
-     ![image](Figures/1.3_result.png)
+     ![image](Figures/Sobel_Y.png)
 * 3.4 Magnitude
   
-   * Here [Dog_Strong.jpg](Figures/Dog_Strong.jpg) and [Dog_Weak.jpg](Figures/Dog_Weak.jpg) to be example
+   * Use the results of (3.2) Sobel X and (3.3) Sobel Y to calculate the magnitude.
 
-   https://github.com/Kung-hen/Image-processing-and-smooth/assets/95673520/ce2d8d34-6793-4961-8f74-fe055452e71e
-
-
-    
+     ![image](Figures/Mag_result.png)
+ 
 2.Image Transformation
 
 * 4.1 Resize
-   * Apply gaussian filter k x k to input image1.
-   * filter kernel equation = (k=2m+1)
+   * From (430,430) to (215,215).
 
-https://github.com/Kung-hen/Image-processing-and-smooth/assets/95673520/92b5157a-ce60-4701-bbb1-2a355492ea54
+     ![image](Figures/Microsoft.png)
 
 * 4.2 Translation
-   * Define: Bilateral magnitude 0 ~ 10, sigmaColor = 90 and sigmaSpace = 90. 
-   * Apply Bilateral filter k x k to input image1.
-   * filter kernel equation = (k=2m+1)
+   * Xnew = Xold + 215 pixels = 108 + 215 = 323.
+   * Ynew = Yold + 215 pixels = 108 + 215 = 323.
+   * Point C (108, 108) is center of resized image.
+   * Point C’(323, 323) is new center of image. 
      
-https://github.com/Kung-hen/Image-processing-and-smooth/assets/95673520/ba7cc81d-efd2-4800-ba98-c87b61829303
+     ![image](Figures/Translate.png)
 
 * 4.3 Rotation scalling
-   * Define: Median magnitude 0 ~ 10.
-   * Apply Median filter k x k to input image1.
-   * filter kernel equation = (k=2m+1)
+   * Center: Center of Image.
+   * Angle = 45 $^{\circ}$ (counter-clockwise).
+   * Scale = 0.5.
+   * window size (430,430)
 
-https://github.com/Kung-hen/Image-processing-and-smooth/assets/95673520/89c4e7a8-0f73-4c8e-bc3d-8f68de7a81d5
-
+    ![image](Figures/Rotate.png)
+  
 * 4.4 Shearing
+   * Old location: ([[50,50],[200,50],[50,200]])
+   * New location: ([[10,100],[100,50],[100,250]]) 
 
-
+    ![image](Figures/Sharing.png)
 
 
 
