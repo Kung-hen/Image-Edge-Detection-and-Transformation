@@ -42,47 +42,52 @@
     * Use Sobel edge detection to detect vertical edge by your own 3x3 Sobel X operator.
       
       ![image](Figures/Sobel_X.png)
-* 3.3 Sobel Y
+* 3.3 Sobel Y:
   
     * Use Sobel edge detection to detect horizontal edge by your own 3x3 Sobel Y operator.
 
      ![image](Figures/Sobel_Y.png)
-* 3.4 Magnitude
+* 3.4 Magnitude:
   
    * Use the results of (3.2) Sobel X and (3.3) Sobel Y to calculate the magnitude.
 
      ![image](Figures/Mag_result.png)
- 
+
+
+
+
 2.Image Transformation
 
-* 4.1 Resize
+* 4.1 Resize:
   
    * From (430,430) to (215,215).
 
-     ![image](Figures/Microsoft.png)
+![image](Figures/Microsoft.png)
 
-* 4.2 Translation
+* 4.2 Translation:
   
    * Xnew = Xold + 215 pixels = 108 + 215 = 323.
    * Ynew = Yold + 215 pixels = 108 + 215 = 323.
    * Point C (108, 108) is center of resized image.
    * Point C’(323, 323) is new center of image. 
 
-     ![image](Figures/Translate.png)
+![image](Figures/Translate.png)
 
-* 4.3 Rotation scalling
+* 4.3 Rotation scalling:
+  
    * Center: Center of Image.
    * Angle = 45 $^{\circ}$ (counter-clockwise).
    * Scale = 0.5.
    * window size (430,430)
 
-     ![image](Figures/Rotate.png)
+![image](Figures/Rotate.png)
   
-* 4.4 Shearing
+* 4.4 Shearing:
+  
    * Old location: ([[50,50],[200,50],[50,200]])
    * New location: ([[10,100],[100,50],[100,250]]) 
 
-     ![image](Figures/Sharing.png)
+![image](Figures/Sharing.png)
 
 
 
