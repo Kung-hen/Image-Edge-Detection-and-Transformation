@@ -2,13 +2,24 @@
 
 
 
-**1.Discription:**
+*Discription:*
 
-***1. This is just a small second project that we want to practice the basic image processing skills for computer vision.***
+***1.This is just a small second project that we want to practice the basic image processing skills for computer vision.***
 
 ***2.This topic was focus on image processing over edge detection and image Transformation.***
 
 ![image](Figures/GUI.png)
+
+
+
+
+**1.Requirements and dependencies**
+  * Python 3.7 (https://www.python.org/downloads/)
+  * Opencv-contrib-python (3.4.2.17)
+  * Matplotlib 3.1.1
+  * UI framework: pyqt5 (5.15.1)
+
+
 
 **2.Usage:**
 
@@ -78,9 +89,4 @@ https://github.com/Kung-hen/Image-processing-and-smooth/assets/95673520/89c4e7a8
 
 
 
-Requirements and dependencies
-  * Python 3.7 (https://www.python.org/downloads/)
-  * Opencv-contrib-python (3.4.2.17)
-  * Matplotlib 3.1.1
-  * UI framework: pyqt5 (5.15.1)
 
