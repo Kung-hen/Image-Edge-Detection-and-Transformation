@@ -70,3 +70,16 @@ https://github.com/Kung-hen/Image-processing-and-smooth/assets/95673520/ba7cc81d
 https://github.com/Kung-hen/Image-processing-and-smooth/assets/95673520/89c4e7a8-0f73-4c8e-bc3d-8f68de7a81d5
 
 * 4.4 Shearing
+
+
+
+
+
+
+
+3.Useage
+  * Python 3.7 (https://www.python.org/downloads/)
+  * Opencv-contrib-python (3.4.2.17)
+  * Matplotlib 3.1.1
+  * UI framework: pyqt5 (5.15.1)
+
